@@ -2,28 +2,28 @@
 
 @section("content")
 
-   <div class="container mt-4">
-      <div class="card mb-4">
-       <div class="card-header mb-2">
-        {{$post->title}}
-       </div>
+<div class="container mt-4">
+    <div class="card mb-4">
+        <div class="card-header mb-2">
+         {{$post->title}}
+        </div>
        
-      <div class="card-body">
-       <p class="card-text">
-           {{$post->body}}
-       </p>
+        <div class="card-body">
+            <p class="card-text">
+             {{$post->body}}
+            </p>
        
-      </div>
-      <div class="card-footer">
-       <span class="mr-2">
-           投稿日時
-       </span>
-       </div>
-      </div>
-   　
-   　<div class="mt-4 text-right">
+        </div>
+        <div class="card-footer">
+             <span class="mr-2">
+               投稿日時 {{ $post->created_at}}
+             </span>
+        </div>
+    </div>
+   
+    <div class="mt-4 text-right">
         <a class="btn btn-primary" href="{{route('posts.edit', ["post" => $post])}}">
-            編集
+          編集
         </a>
         
         <form
@@ -38,5 +38,5 @@
             </button>
         </form>
      </div>
-   </div>
+</div>
 @endsection("content")

@@ -12,15 +12,15 @@
         >
         <title>人生逆転サロン</title>
     </head>
-　<body>
+    <body>
         <header class = "navbar navbar-dark bg-danger">
             <div class="container">
-             <a class="navbar-brand" href="{{ url("") }}">
-                Gyakuten
-             </a>
+                <a class="navbar-brand" href="{{ url("") }}">
+                 Gyakuten
+                </a>
             </div>
         </header>
         
-  　    @yield("content")
- </body>
+        @yield("content")
+    </body>
 </html>
